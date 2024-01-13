@@ -1,0 +1,266 @@
+html,body{
+    /* background-color: aquamarine; */
+    margin:0;
+    height:100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+#content{
+    /* background-color:aqua; */
+    display:flex;
+    /* border: 1px solid red; */
+
+    height:100vh;
+    width:100vw;
+}
+#content1{
+    /* background-color:aqua; */
+    display:flex;
+    /* border: 1px solid red; */
+
+    height:100vh;
+    width:100vw;
+}
+#sidebar{
+    /* border: 1px solid red; */
+    background-color: bisque ;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    /* position:relative; */
+    
+}
+#project{
+    /* border: 1px solid blue; */
+    background-color: white;
+    width: 80vw;
+    /* display: flex; */
+}
+
+
+/* sidebar items */
+/* this is where project objects are displayed and can be selected kinda like tabs */
+#listcontainer{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid green; */
+    background-color: bisque;
+    /* position:absolute; */
+    height:90%;
+    width:100%;
+    /* min-height: 100%; */
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#createbutton{
+    background-color: white;
+    border:1px solid black;
+    border-radius: 10px;
+    margin-top: 20px;
+    /* position: absolute; */
+    width:50%;
+    height: 30px;
+    /* usefull for aligning one item in flex box  */
+    align-self: center;
+    cursor: pointer;
+
+}
+#createbutton:hover{
+    background-color: black;
+    color: white;
+}
+.projectcard{
+    /* border: 1px solid black; */
+    padding-top:10px;
+    padding-bottom: 10px;
+    width:100%;
+    height: 20px;
+    text-align: center;
+    font-size: 18px;
+    cursor:pointer;
+}
+.projectcard:hover{
+    background-color:rgb(218, 160, 79);
+}
+
+
+/* main page contents */
+#formcontainer{
+    /* border: 2px solid blue; */
+    height: 100%;
+    min-height: 100%;
+    /* width: 50vw; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    padding-top: 20%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#titlelabel{
+    font-size: 30px;
+    margin-top: -200px;
+    margin-left: 200px;
+    margin-bottom: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+#titleinput{
+    border: none;
+    font-size: 20px;
+    margin-left: 200px;
+    margin-bottom: 25px;
+    width:50%;
+
+}
+#submit{
+    width: 200px;
+    height: 20px;
+    margin-left: 200px;
+
+}
+/* main container for all project */
+.todocontainer{
+    /* border: 3px solid black ; */
+    /* background-color: green; */
+    height: 100%;
+    min-height: 100%;
+    /* width: 50vw; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    padding-top: 5%;
+    padding-left: 15%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#projecttitle{
+    font-size: 36px;
+    border: none;
+    width:70%;
+
+}
+#createTaskbutton{
+    border: none;
+    width:200px;
+    height: 40px;
+    text-align: left;
+    background-color: white;
+    cursor:pointer;
+}
+/* #createTaskbutton:hover{
+
+} */
+#taskformcont{
+    display:flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    border-radius: 10px;
+    height: 150px;
+    width: 70%;
+
+}
+
+/* taskform items */
+#nameinput{
+    margin-top:10px;
+    margin-left:5px;
+    font-size: 18px;
+    border: none
+;}
+#descinput{
+    border: none;
+    margin-top:10px;
+    margin-left:5px;
+}
+#dateprioritybox{
+    margin-top: 10px;
+    display :flex;
+    /* border: 1px solid black; */
+    height:30px;
+}
+#buttonscontainer{
+    /* border:1px solid red; */
+    height:40px;
+    display:flex;
+    justify-content: right;
+    text-align: center;
+}
+#taskcancel{
+    /* padding:10px; */
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    border: 1px solid black;
+    text-align: center;
+    margin-right: 10px;
+    cursor: pointer;
+}
+#tasksubmit{
+    /* padding:10px; */
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top :10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+
+}
+
+/* submited task */
+.taskcard{
+    margin-top: 10px;
+    margin-left: 5px;
+    border-bottom: 1px solid lightgray;
+    /* border-bottom: 1px; */
+    /* border: 1px solid purple; */
+    width: 70%;
+    height:60px;
+}
+#maintaskcont{
+    /* border:1px solid lime; */
+    display:flex;
+    margin-left: -35px;
+    margin-top:10px;
+}
+#cardtitle{
+    /* border: 1px solid black; */
+    font-size: 20px;
+
+
+}
+#carddesc{
+    /* border: 1px solid green; */
+    /* padding-left: 20px; */
+    margin-top: 10px;
+    font-size: 16px;
+    color: grey;
+    /* padding-bottom */
+}
+#checkbox{
+    margin-top: 25px;
+    margin-right:15px;
+    border: 1px black solid;
+    border-radius: 100px;;
+    height :20px;
+    width: 20px;
+    cursor: pointer;
+}
+#removetask{
+    /* border: 1px solid red; */
+    padding-top:30px;
+    font-size: 12px;
+    cursor: pointer;
+}
+#removetask:hover{
+    color: grey;
+}
